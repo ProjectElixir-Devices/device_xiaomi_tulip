@@ -405,6 +405,13 @@
          pulsating and RGB control would set this config to 75. -->
     <integer name="config_deviceLightCapabilities">232</integer>
 
+    <!-- Does the notification LED support multiple colors?
+    Used to decide if the user can change the colors -->
+    <bool name="config_multiColorNotificationLed">false</bool>
+
+    <!-- Does the battery LED support multiple colors. Used to decide if the user can change the colors -->
+    <bool name="config_multiColorBatteryLed">false</bool>
+
     <!-- Whether device needs to wait for Qualcomm MPCTL service to start
          before setting power profiles on boot. -->
     <bool name="config_waitForMpctlOnBoot">true</bool>
