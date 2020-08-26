@@ -109,11 +109,6 @@
         <fqname>@1.0::IUsb/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.vibrator</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IVibrator/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>com.fingerprints.extension</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IFingerprintAuthenticator/default</fqname>
