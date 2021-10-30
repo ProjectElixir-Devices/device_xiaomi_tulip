@@ -18,6 +18,7 @@ allow hal_fingerprint_tulip fingerprintd_data_file:dir rw_dir_perms;
 allow hal_fingerprint_tulip fingerprintd_data_file:file create_file_perms;
 
 allow hal_fingerprint_tulip sysfs_fingerprint:file rw_file_perms;
+allow hal_fingerprint_tulip sysfs_devfreq:dir { search read };
 
 allow hal_fingerprint_tulip self:netlink_socket create_socket_perms_no_ioctl;
 
