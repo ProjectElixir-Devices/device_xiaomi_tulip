@@ -8,7 +8,6 @@ vendor/lib/libadsp_hvx_callback_skel.so|17e18628d5f06f5ad46b9577baac0d3571b42be1
 vendor/lib/libadsp_hvx_stub.so|d3f2bfdf3f6bd4911e5015a022a098582addcf6f
 vendor/lib/libadsprpc.so|35bf7c53dc7149b39126638c5c1bac3b08e262be
 vendor/lib/libcdsp_default_listener.so|6347d41d3c3704a04ae0f8e816f071057c483163
-vendor/lib/libcdsprpc.so|2774f0faf3728faf425fdeb81b9820a3c231a5ba
 vendor/lib/libfastcvadsp_stub.so|43740cca4f7549c86e4b2ab1daf4d703d9a9b258
 vendor/lib/libfastcvopt.so|77789b2b6e978bcc2ee7e848d6163fc31d6b5393
 vendor/lib/libmdsprpc.so|caae31754dee7a45267ae3912685773046ab6b47
@@ -116,11 +115,10 @@ vendor/lib/libarcsoft_dualcam_refocus_rear_t.so|901e668b65678ebd745018118b5f2c7e
 vendor/lib/libarcsoft_high_dynamic_range.so|aa5e74de2c321d7b68a7461122f72a1e55e70115
 vendor/lib/libc++_shared.so|54a61595d6fee176af9aa65ff044746ed1446233
 vendor/lib/libcamera_scene.so|48fa252617819234ea5faa8d0fb9fe4b3f4a1a90
-vendor/lib/libcdsprpc.so|3d4bb2995a6c1dea38a477338c6ad482d83fb2ac
+vendor/lib/libcdsprpc.so|2774f0faf3728faf425fdeb81b9820a3c231a5ba
 vendor/lib/libdepthmapwrapper.so|be287354afe23e2c005fa81c514c8785f37ca7a2
 vendor/lib/libflash_pmic.so|a1781a4831dc157d49a238d118b83d9e1d7d6311
 vendor/lib/libhal_dbg.so|534edc9bfa467f23bcbddb933efd0999769ab4ae
-vendor/lib/libhdr_tm.so|37ac96055e1fcb2d1a3b4507ba62760ca30915b3
 vendor/lib/libjpegdhw.so|c8236e2106ac5cdc65421678726f553bb964d3be
 vendor/lib/libjpegdmahw.so|d82dfd72c7f986e7fc43767f0a1bf2bb185dc67c
 vendor/lib/libjpegehw.so|86d4cd9ba5081bbdf760f93fc5367d607ec39a66
@@ -762,7 +760,7 @@ product/framework/dpmapi.jar:system_ext/framework/dpmapi.jar|4696df9793ad676b305
 product/lib64/com.qualcomm.qti.dpm.api@1.0.so:system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so|a763bb1bbeecb84723bff6f547a3b23fab68dee3
 product/lib64/libdpmctmgr.so:system_ext/lib64/libdpmctmgr.so|3d4b87a4937caf3a8d276f48a4f0dc2cad246c5b
 product/lib64/libdpmfdmgr.so:system_ext/lib64/libdpmfdmgr.so|e809155312a05d83b323ab0be64cb393d936e52a
-product/lib64/libdpmframework.so:system_ext/lib64/libdpmframework.so|8fd037eb8740a468a67c78e7fa01c69b1ba3fd2a|dad2493b5d4f42078713066130b0703af449c82f
+product/lib64/libdpmframework.so:system_ext/lib64/libdpmframework.so|dad2493b5d4f42078713066130b0703af449c82f
 product/lib64/libdpmtcm.so:system_ext/lib64/libdpmtcm.so|71a3d624602807f6fa6cbdb3a489efe9e93de634
 -product/priv-app/dpmserviceapp/dpmserviceapp.apk:system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|9fd873c5330c03c62dfdeb6540b5984588295319
 vendor/bin/dpmQmiMgr|d536096b310a2d3f30a683c1bdcad8658db1ba52
