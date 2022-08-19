@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2020 The LineageOS Project
+// Copyright (C) 2021 The LineageOS Project
 //
 // SPDX-License-Identifier: Apache-2.0
 //
@@ -21,4 +21,10 @@ cc_library {
         "libshim_dpmframework/strdup8to16.cpp",
     ],
     product_specific: true,
+}
+
+cc_library_shared {
+    name: "libwatermark_shim",
+    srcs: ["libwatermark_shim/libwatermark_shim.c"],
+    vendor: true,
 }
