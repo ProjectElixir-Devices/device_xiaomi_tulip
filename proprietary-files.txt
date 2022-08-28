@@ -1205,13 +1205,11 @@ vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|9cf774301dfb59173cc2a6871ff851ea6b546f39
 vendor/lib64/vendor.qti.hardware.soter@1.0.so|5815859dc07d3181901596d06612b379e86fe6fd
 
-# Thermal
-vendor/etc/thermal-engine.conf
-vendor/bin/thermal-engine
--vendor/lib/libthermalclient.so
--vendor/lib64/libthermalclient.so
+# Thermal - from rmx1801
+vendor/bin/thermal-engine 
+vendor/lib/libthermalclient.so 
+vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
-vendor/lib64/libthermalfeature.so
 
 # Time services - from jasmine
 -vendor/app/TimeService/TimeService.apk|27f9b81621c446baa8c37581d9bfbca2fd67b496
