@@ -33,13 +33,15 @@
 #include <string.h>
 #include <sys/sysinfo.h>
 #include <unistd.h>
-
+#include <stdlib.h>
 #include <android-base/properties.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
 
-#include "vendor_init.h"
 #include "property_service.h"
+#include "vendor_init.h"
+
+using ::android::base::SetProperty;
 
 char const *heapstartsize;
 char const *heapgrowthlimit;
@@ -62,22 +64,14 @@ void check_device()
         heaptargetutilization = "0.5";
         heapminfree = "8m";
         heapmaxfree = "32m";
-    } else if (sys.totalram > 3072ull * 1024 * 1024) {
+    } else {
         // from - phone-xxhdpi-4096-dalvik-heap.mk
         heapstartsize = "8m";
-        heapgrowthlimit = "256m";
+        heapgrowthlimit = "192m";
         heapsize = "512m";
         heaptargetutilization = "0.6";
         heapminfree = "8m";
         heapmaxfree = "16m";
-    } else {
-        // from - phone-xhdpi-2048-dalvik-heap.mk
-        heapstartsize = "8m";
-        heapgrowthlimit = "192m";
-        heapsize = "512m";
-        heaptargetutilization = "0.75";
-        heapminfree = "512k";
-        heapmaxfree = "8m";
     }
 }
 
@@ -92,14 +86,25 @@ void property_override(char const prop[], char const value[], bool add = true)
     }
 }
 
+void property_override_dual(char const system_prop[], char const vendor_prop[],
+    char const value[])
+{
+    property_override(system_prop, value);
+    property_override(vendor_prop, value);
+}
+
 void vendor_load_properties()
 {
+    // dalvik
     check_device();
-
     property_override("dalvik.vm.heapstartsize", heapstartsize);
     property_override("dalvik.vm.heapgrowthlimit", heapgrowthlimit);
     property_override("dalvik.vm.heapsize", heapsize);
     property_override("dalvik.vm.heaptargetutilization", heaptargetutilization);
     property_override("dalvik.vm.heapminfree", heapminfree);
     property_override("dalvik.vm.heapmaxfree", heapmaxfree);
+
+    // fingerprint
+    property_override("ro.build.description", "walleye-user 8.1.0 OPM1.171019.011 4448085 release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
 }
