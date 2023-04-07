@@ -109,6 +109,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="hide_lte_plus_data_icon_bool" value="false"/>
 
     <carrier_config mcc="001" mnc="01">
         <boolean name="carrier_vt_available_bool" value="true" />
