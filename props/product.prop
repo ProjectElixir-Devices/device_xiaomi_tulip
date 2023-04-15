@@ -4,3 +4,6 @@ ro.charger.enable_suspend=true
 
 # Rescue party
 persist.sys.disable_rescue=true
+
+# Elixir
+org.elixir.device=Redmi Note 6 Pro

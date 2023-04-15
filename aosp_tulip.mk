@@ -15,6 +15,18 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Inherit from tulip device
 $(call inherit-product, device/xiaomi/tulip/device.mk)
 
+# Elixir stuffs
+BUILD_USERNAME := Mocha
+BUILD_HOSTNAME := Elixir
+ELIXIR_MAINTAINER := Mocha
+ELIXIR_BUILD_TYPE := OFFICIAL
+TARGET_INCLUDE_STOCK_ACORE := false
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_INCLUDE_PIXEL_CHARGER := true
+
 # Device Info
 PRODUCT_NAME := aosp_tulip
 PRODUCT_DEVICE := tulip
