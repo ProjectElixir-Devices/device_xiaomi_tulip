@@ -18,7 +18,6 @@ $(call inherit-product, device/xiaomi/tulip/device.mk)
 # Elixir stuffs
 BUILD_USERNAME := Mocha
 BUILD_HOSTNAME := Elixir
-ELIXIR_MAINTAINER := Mocha
 ELIXIR_BUILD_TYPE := OFFICIAL
 TARGET_INCLUDE_STOCK_ACORE := false
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
