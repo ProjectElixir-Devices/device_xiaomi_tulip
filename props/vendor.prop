@@ -167,6 +167,10 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
+# Graphics
+ro.hardware.egl=adreno
+ro.hardware.vulkan=adreno
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1 
